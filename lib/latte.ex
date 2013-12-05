@@ -15,4 +15,5 @@ defmodule Latte do
     :js.call(js, "CoffeeScript.compile", [coffee_str])
     true = :js_driver.destroy(js)
   end
+
 end
