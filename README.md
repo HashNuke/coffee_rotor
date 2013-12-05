@@ -1,3 +1,3 @@
 # Latte
 
-** TODO: Add description **
+Coffeescript compiler for Elixir
