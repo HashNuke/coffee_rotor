@@ -12,8 +12,8 @@ defmodule Latte do
     {ok, js} = :js_driver.new()
     {:ok, coffee} = File.read "lib/latte/coffee-script.js"
     :ok = :js.define(js, coffee)
-    :js.call(js, "CoffeeScript.compile", [coffee_str])
+    javascript = :js.call(js, "CoffeeScript.compile", [coffee_str])
     true = :js_driver.destroy(js)
+    javascript
   end
-
 end
