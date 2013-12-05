@@ -10,7 +10,8 @@ defmodule Latte.Mixfile do
 
   # Configuration for the OTP application
   def application do
-    [mod: { Latte, [] }]
+    [ applications: [:erlang_js],
+      mod: { Latte, [] }]
   end
 
   # Returns the list of dependencies in the format:
@@ -19,6 +20,6 @@ defmodule Latte.Mixfile do
   # To specify particular versions, regardless of the tag, do:
   # { :barbat, "~> 0.1", github: "elixir-lang/barbat.git" }
   defp deps do
-    []
+    [ {:erlang_js, github: "basho/erlang_js"} ]
   end
 end
