@@ -1,4 +1,4 @@
-# Latte
+# Latte (work in progress)
 
 Coffeescript compiler for Elixir Right now everything is a TODO.
 
