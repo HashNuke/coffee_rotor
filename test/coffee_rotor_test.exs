@@ -1,7 +1,7 @@
 defmodule CoffeeRotorTest do
   use ExUnit.Case
 
-  import Rotor.Actions
+  import Rotor.BasicRotors
   import CoffeeRotor
 
   test "should watch for changes and compile to javascript" do

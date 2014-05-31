@@ -17,7 +17,7 @@ CoffeeRotor.coffee(files)
 ```
 # This goes in the place you are configuring Rotor
 
-import Rotor.Actions
+import Rotor.BasicRotors
 import CoffeeRotor
 
 output_path = "priv/static/assets/app.js"
