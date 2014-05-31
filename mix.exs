@@ -3,7 +3,7 @@ defmodule CoffeeRotor.Mixfile do
 
   def project do
     [app: :coffee_rotor,
-     version: "0.1.1",
+     version: "0.1.2",
      elixir: "~> 0.13.3",
      description: description,
      package: package,
