@@ -12,8 +12,10 @@ defmodule CoffeeRotor.Mixfile do
 
 
   def application do
-    [applications: [:rotor, :erlang_js],
-     mod: {CoffeeRotor, []}]
+    [
+      applications: [:rotor, :erlang_js],
+      mod: []
+    ]
   end
 
 
