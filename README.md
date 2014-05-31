@@ -12,7 +12,7 @@ The `CoffeeRotor` module provides the `coffee` rotor. And this is how you call i
 CoffeeRotor.coffee(files)
 ```
 
-### Example Rotor config using the coffee rotor
+### Example config using the coffee rotor
 
 ```
 # This goes in the place you are configuring Rotor
