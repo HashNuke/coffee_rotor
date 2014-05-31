@@ -1,6 +1,6 @@
 # CoffeeRotor
 
-[Rotor](https://github.com/HashNuke/rotor) action to compile CoffeeScript files.
+This is a [Rotor](https://github.com/HashNuke/rotor) to compile CoffeeScript files.
 
 
 ### Usage

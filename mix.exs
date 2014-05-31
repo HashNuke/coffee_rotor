@@ -5,6 +5,8 @@ defmodule CoffeeRotor.Mixfile do
     [app: :coffee_rotor,
      version: "0.1.0",
      elixir: "~> 0.13.3",
+     description: description,
+     package: package,
      deps: deps]
   end
 
@@ -15,6 +17,22 @@ defmodule CoffeeRotor.Mixfile do
     [applications: [:rotor, :erlang_js],
      mod: {CoffeeRotor, []}]
   end
+
+
+  defp description do
+    """
+    A [rotor](https://github.com/HashNuke/rotor) to compile CoffeeScript files
+    """
+  end
+
+
+  defp package do
+    [
+      contributors: ["Akash Manohar J"],
+      links: %{ "GitHub" => "https://github.com/HashNuke/coffee-rotor" }
+    ]
+  end
+
 
   # Dependencies can be hex.pm packages:
   #
