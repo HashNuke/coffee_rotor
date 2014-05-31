@@ -1,0 +1,1 @@
+bar = -> console.log "world"

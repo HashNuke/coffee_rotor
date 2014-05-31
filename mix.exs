@@ -1,25 +1,34 @@
-defmodule Latte.Mixfile do
+defmodule CoffeeRotor.Mixfile do
   use Mix.Project
 
   def project do
-    [ app: :latte,
-      version: "0.0.1",
-      elixir: "~> 0.11.2",
-      deps: deps ]
+    [app: :coffee_rotor,
+     version: "0.0.1",
+     elixir: "~> 0.13.3",
+     deps: deps]
   end
 
   # Configuration for the OTP application
+  #
+  # Type `mix help compile.app` for more information
   def application do
-    [ applications: [:erlang_js],
-      mod: { Latte, [] }]
+    [applications: [:rotor, :erlang_js],
+     mod: {CoffeeRotor, []}]
   end
 
-  # Returns the list of dependencies in the format:
-  # { :foobar, git: "https://github.com/elixir-lang/foobar.git", tag: "0.1" }
+  # Dependencies can be hex.pm packages:
   #
-  # To specify particular versions, regardless of the tag, do:
-  # { :barbat, "~> 0.1", github: "elixir-lang/barbat.git" }
+  #   {:mydep, "~> 0.3.0"}
+  #
+  # Or git/path repositories:
+  #
+  #   {:mydep, git: "https://github.com/elixir-lang/mydep.git", tag: "0.1"}
+  #
+  # Type `mix help deps` for more examples and options
   defp deps do
-    [ {:erlang_js, github: "basho/erlang_js"} ]
+    [
+      {:rotor, "~> 0.1.0"},
+      {:erlang_js, github: "basho/erlang_js", tag: "1.3.0"}
+    ]
   end
 end
