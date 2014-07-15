@@ -21,8 +21,8 @@ import Rotor.BasicRotors
 import CoffeeRotor
 
 output_path = "priv/static/assets/app.js"
-Rotor.add_group :coffeescripts, ["priv/assets/javascripts/*.coffee"], fn(files)->
-  read_files(files)
+Rotor.watch :coffeescripts, ["priv/assets/javascripts/*.coffee"], fn(_changed_files, all_files)->
+  read_files(all_files)
   |> coffee
   |> concat
   |> output_to(output_path)
