@@ -10,16 +10,17 @@ defmodule CoffeeRotorTest do
       File.rm output_path
     end
 
-    Rotor.add_group :coffeescripts, ["test/samples/*.coffee"], fn(files)->
-      read_files(files)
+    Rotor.watch :coffeescripts, ["test/samples/*.coffee"], fn(_changed_files, all_files) ->
+      read_files(all_files)
       |> coffee
       |> concat
       |> output_to(output_path)
     end
+    Rotor.run(:coffeescripts)
+    Rotor.stop_watching(:coffeescripts)
 
     {:ok, contents} = File.read output_path
     assert Regex.match?(~r/foo/, contents) && Regex.match?(~r/bar/, contents) && Regex.match?(~r/function/, contents)
 
-    Rotor.remove_group(:coffeescripts)
   end
 end

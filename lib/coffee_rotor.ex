@@ -1,7 +1,7 @@
 defmodule CoffeeRotor do
 
   def coffee(files) do
-    {ok, js} = :js_driver.new()
+    {:ok, js} = :js_driver.new()
     {:ok, coffee_compiler} = File.read "vendor/coffee-script.js"
     :ok = :js.define(js, coffee_compiler)
 
