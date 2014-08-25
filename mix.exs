@@ -4,7 +4,7 @@ defmodule CoffeeRotor.Mixfile do
   def project do
     [app: :coffee_rotor,
      version: "0.2.0",
-     elixir: ">= 0.14.2",
+     elixir: ">= 0.15.1",
      description: description,
      package: package,
      deps: deps]
@@ -13,7 +13,7 @@ defmodule CoffeeRotor.Mixfile do
 
   def application do
     [
-      applications: [:rotor, :erlang_js],
+      applications: [:sasl, :rotor, :erlang_js],
       mod: []
     ]
   end
