@@ -1,2 +1,2 @@
 %{"erlang_js": {:git, "git://github.com/basho/erlang_js.git", "07467d899ab90a2b719ad19ab0be0048c1c8d873", [tag: "1.3.0"]},
-  "rotor": {:package, "0.2.1"}}
+  "rotor": {:package, "0.2.2"}}
