@@ -3,8 +3,8 @@ defmodule CoffeeRotor.Mixfile do
 
   def project do
     [app: :coffee_rotor,
-     version: "0.2.0",
-     elixir: ">= 0.15.1",
+     version: "0.2.1",
+     elixir: ">= 1.0.0",
      description: description,
      package: package,
      deps: deps]
@@ -36,7 +36,7 @@ defmodule CoffeeRotor.Mixfile do
 
   defp deps do
     [
-      {:rotor, "~> 0.2.1"},
+      {:rotor, "~> 0.2.2"},
       {:erlang_js, github: "basho/erlang_js", tag: "1.3.0"}
     ]
   end
