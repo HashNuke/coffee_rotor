@@ -8,13 +8,13 @@ This is a [Rotor](https://github.com/HashNuke/rotor) to compile CoffeeScript fil
 
 The `CoffeeRotor` module provides the `coffee` rotor. And this is how you call it
 
-```
+```elixir
 CoffeeRotor.coffee(files)
 ```
 
 ### Example config using the coffee rotor
 
-```
+```elixir
 # This goes in the place you are configuring Rotor
 
 import Rotor.BasicRotors
